@@ -8,13 +8,12 @@ namespace Day_1.Controllers
 
         public IActionResult Details(int id)
         {
-            Student student = StudentList.Students.FirstOrDefault(s => s.ID.Equals(id));
 
-            return View("Details", student);
+            return View();
         }
         public IActionResult Index()
         {
-            return View("Index", StudentList.Students);
+            return View();
         }
     }
 }
