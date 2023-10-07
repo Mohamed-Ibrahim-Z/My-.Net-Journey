@@ -2014,9 +2014,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\workspace\\C#\\.Net_Doc\\Projects\\Day 1\\Day 1\\Day 1.csproj",
-      "projectName": "Day 1",
-      "projectPath": "D:\\workspace\\C#\\.Net_Doc\\Projects\\Day 1\\Day 1\\Day 1.csproj",
+      "projectUniqueName": "D:\\workspace\\C#\\.Net_Doc\\Projects\\Day 1\\Day 1\\Core_Project.csproj",
+      "projectName": "Core_Project",
+      "projectPath": "D:\\workspace\\C#\\.Net_Doc\\Projects\\Day 1\\Day 1\\Core_Project.csproj",
       "packagesPath": "C:\\Users\\mohme\\.nuget\\packages\\",
       "outputPath": "D:\\workspace\\C#\\.Net_Doc\\Projects\\Day 1\\Day 1\\obj\\",
       "projectStyle": "PackageReference",

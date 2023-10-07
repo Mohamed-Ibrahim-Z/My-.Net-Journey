@@ -5,9 +5,24 @@ namespace Day_1.Controllers
 {
     public class DeptController : Controller
     {
+        Entities context = new Entities();
+
+        public IActionResult SaveDept(Department dept)
+        {
+            if (dept.Name != null && dept.Name != null)
+            {
+                context.Department.Add(dept);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(dept);
+        }
+        public IActionResult AddDept()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
-            Entities context = new Entities();
             List<Department> depts = context.Department.ToList();
 
             return View("index", depts);

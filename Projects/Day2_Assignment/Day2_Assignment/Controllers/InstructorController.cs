@@ -5,9 +5,10 @@ namespace Day2_Assignment.Controllers
 {
     public class InstructorController : Controller
     {
+        Entities entities = new Entities();
         public IActionResult Index()
         {
-            return View("Index", new Entities().Instructors.ToList());
+            return View("Index", entities.Instructors);
         }
         public IActionResult Details(int id)
         {

@@ -18,6 +18,7 @@ using Task_Management.Models;
 
 namespace Task_Management.Areas.Identity.Pages.Account
 {
+    [AnonymousOnly]
     public class LoginModel : PageModel
     {
         private readonly SignInManager<User> _signInManager;

@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "D:\\workspace\\C#\\.Net_Doc\\Projects\\Day 1\\Day 1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Day 1.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Day 1.bundle.scp.css"
+      "Id": "D:\\workspace\\C#\\.Net_Doc\\Projects\\Day 1\\Day 1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Core_Project.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Core_Project.bundle.scp.css"
     },
     {
       "Id": "D:\\workspace\\C#\\.Net_Doc\\Projects\\Day 1\\Day 1\\wwwroot\\css\\site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Day 1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Core_Project.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Day 1.props",
-      "PackagePath": "build\\Day 1.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Core_Project.props",
+      "PackagePath": "build\\Core_Project.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Day 1.props",
-      "PackagePath": "buildMultiTargeting\\Day 1.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Core_Project.props",
+      "PackagePath": "buildMultiTargeting\\Core_Project.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Day 1.props",
-      "PackagePath": "buildTransitive\\Day 1.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Core_Project.props",
+      "PackagePath": "buildTransitive\\Core_Project.props"
     }
   ],
   "ElementsToRemove": []

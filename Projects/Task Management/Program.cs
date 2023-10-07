@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Task_Management.Data;
 using Task_Management.Models;
+using Task_Management.Repositories;
+using Task_Management.Services;
 
 namespace Task_Management
 {
@@ -23,6 +25,7 @@ namespace Task_Management
                 .AddDefaultUI()
                 .AddDefaultTokenProviders();
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<ITaskRepository, TaskRepoServices>();   
 
             builder.Services.AddAuthentication().AddGoogle(googleOptions =>
             {

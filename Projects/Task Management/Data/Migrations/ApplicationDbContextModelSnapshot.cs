@@ -185,7 +185,7 @@ namespace Task_Management.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Task");
+                    b.ToTable("Tasks");
                 });
 
             modelBuilder.Entity("Task_Management.Models.User", b =>

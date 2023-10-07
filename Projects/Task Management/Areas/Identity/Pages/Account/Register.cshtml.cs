@@ -23,6 +23,7 @@ using Task_Management.Models;
 
 namespace Task_Management.Areas.Identity.Pages.Account
 {
+    [AnonymousOnly]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<User> _signInManager;

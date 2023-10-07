@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b/T7RggEpByA+dGPlfCJmxowRZnt9/dv7CsUIrevHTpAPYZRhnj/i/Rmh1uxC/+70F4bpibZKrNCJAWt09cOcQ==",
+  "dgSpecHash": "RsU7ksMKVckDHQngWifcIhy6l4uf62Z67Byj6iFk9lWC6pxYg43+7U6GuPRGfss2UXPuiRSpTKYSapBnGnsMwQ==",
   "success": true,
-  "projectFilePath": "D:\\workspace\\C#\\.Net_Doc\\Projects\\Day 1\\Day 1\\Day 1.csproj",
+  "projectFilePath": "D:\\workspace\\C#\\.Net_Doc\\Projects\\Day 1\\Day 1\\Core_Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mohme\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mohme\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
