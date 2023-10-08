@@ -4,7 +4,7 @@ public class AnonymousOnly : AuthorizeAttribute
 {
     public AnonymousOnly() : base()
     {
-        Roles = "Anonymous";
-
+       // Roles = "Anonymous";
+        Policy = "AnonymousOnly";
     }
 }

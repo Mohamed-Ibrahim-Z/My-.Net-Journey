@@ -39,7 +39,11 @@ namespace Task_Management.Controllers
         }
         public IActionResult EditTask(int id)
         {
-            return View(_taskRepo.GetTaskById(id));
+            var task = _taskRepo.GetTaskById(id);
+            if (task == null)
+                return NotFound();
+
+            return View(task);
         }
         [HttpPost]
         public IActionResult EditTask(Models.Task task, int id)
@@ -47,9 +51,22 @@ namespace Task_Management.Controllers
             _taskRepo.UpdateTask(task, id);
             return RedirectToAction("Index");
         }
+       
+        public IActionResult DetailsTask(int id)
+        {
+            var task = _taskRepo.GetTaskById(id);
+            if (task == null)
+                return NotFound();
+
+            return View(task);
+        }
         public IActionResult DeleteTask(int id)
         {
-            return View(_taskRepo.GetTaskById(id));
+            var task = _taskRepo.GetTaskById(id);
+            if (task == null)
+                return NotFound();
+
+            return View(task);
         }
         [HttpPost]
         public IActionResult DeleteTask(Models.Task task, int id)
@@ -58,10 +75,5 @@ namespace Task_Management.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult DetailsTask(int id)
-        {
-            return View(_taskRepo.GetTaskById(id));
-        }
-        
     }
 }

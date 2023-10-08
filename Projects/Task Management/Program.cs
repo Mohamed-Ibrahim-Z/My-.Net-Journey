@@ -25,7 +25,19 @@ namespace Task_Management
                 .AddDefaultUI()
                 .AddDefaultTokenProviders();
             builder.Services.AddControllersWithViews();
-            builder.Services.AddScoped<ITaskRepository, TaskRepoServices>();   
+            builder.Services.AddScoped<ITaskRepository, TaskRepoServices>();
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AnonymousOnly", policy =>
+                {
+                    policy.RequireAssertion(context =>
+                    {
+                        // Allow access if the user is not authenticated
+                        Console.WriteLine(context.User.Identity.IsAuthenticated);
+                        return !context.User.Identity.IsAuthenticated;
+                    });
+                });
+            });
 
             builder.Services.AddAuthentication().AddGoogle(googleOptions =>
             {
