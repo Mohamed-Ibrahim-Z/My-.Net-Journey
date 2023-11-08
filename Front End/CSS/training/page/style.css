@@ -1,0 +1,47 @@
+.layout{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "main sidebar"
+        "footer footer";
+    
+}
+header{
+    grid-area: header;
+    background-color: blue;
+    color: #fff;
+    padding: 1rem;
+
+}
+header::before{
+    content: "Header";
+}
+section{
+    grid-area: main;
+    background-color: red;
+    padding: 1rem;
+}
+section::before{
+    content: "Main";
+}
+aside{
+    grid-area: sidebar;
+    background-color: gray;
+    color: #fff;
+    padding: 1rem;
+}
+aside::before{
+    content: "Sidebar";
+}
+footer{
+    grid-area: footer;
+    background-color: darkgreen;
+    color: #fff;
+    padding: 1rem;
+}
+footer::before{
+    content: "Footer";
+}

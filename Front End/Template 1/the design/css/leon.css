@@ -1,0 +1,159 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #10cab7;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/* Header */
+.container{
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.logo{
+    width: 60px;
+    text-align: center;
+
+}
+.header{
+    margin: 10px 0;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links:hover .nav-list{
+    transform: scaleX(1);
+}
+
+.menu-icon {
+    font-size: 24px;
+    transition: all 0.3s ease; /* Add a smooth transition effect */
+}
+
+.menu-icon:hover {
+    transform: scale(1.2); /* Scale the icon on hover for a smooth animation */
+    color: var(--main-color); /* Change the color on hover if desired */
+    
+}
+
+.menu-icon.fa-bars-staggered::before {
+    content: "\f550"; /* Change the content to the 'fa-bars' icon code */
+}
+
+.nav{
+    position: relative;
+}
+
+.nav-list{
+    list-style: none;  
+    padding: 0;
+    margin: 8px 0 0 0;
+    position: absolute;
+    background-color: #f6f6f6;
+    right: 0;
+    min-width: calc(100% + 80px);
+    transform: scaleX(0);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+.nav-list::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #f6f6f6 transparent;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px 10px 10px;
+    display: block;
+    transition: all 0.3s ease;
+}
+.nav-list li a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    padding-left: 20px;
+}
+
+/* Header End */
+
+/* Landing Page */
+.landing{
+    background-color: #eee;
+    padding: 50px 0;
+    position: relative;
+    background-size: cover;
+}
+
+.landing .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+h1{
+    color: var(--main-color);
+}
+.leading-description{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    
+}
+.landing .container :last-child{
+    margin-top: 10px;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .container{
+        max-width: 100%;
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media (min-width : 768px) {
+    .container{
+        max-width: 750px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media  (min-width : 992px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media(min-width : 1200px) {
+    .container{
+        max-width: 1170px;
+    }
+}
+
+

@@ -1,0 +1,81 @@
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: #eee;
+    border-radius: 50%;
+    animation: rotate 4s linear infinite;
+}
+
+div::before,
+div::after,
+div::after::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: red;
+    top: -1px;
+    left: 0;
+    animation:  2s linear infinite;
+}
+
+div::after,
+div::before::before,
+div::before::after,
+div::before::after::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    background: blue;
+    top: 0;
+    right: -1px;
+    animation: borderAnimation 2s linear infinite;
+}
+
+div::before::before,
+div::before::after::before,
+div::before::after,
+div::after::before,
+div::after::before::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: green;
+    bottom: -1px;
+    left: 0;
+    animation: borderAnimation 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes borderAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+div:hover::before,
+div:hover::after,
+div:hover::before::before,
+div:hover::before::after,
+div:hover::before::after::before,
+div:hover::after::before,
+div:hover::after::before::before {
+    animation: none;
+}
